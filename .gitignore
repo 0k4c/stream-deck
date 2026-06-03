@@ -1,0 +1,26 @@
+# === Node.js ===
+# 依存パッケージ。`npm install` で復元できるので Git では管理しない（重い・不要）
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === ビルド成果物 ===
+dist/
+build/
+
+# === 環境変数・秘密情報 ===
+# PINやトークンなどの秘密情報はここに入れ、Gitに上げない（.env.example は共有OK）
+.env
+.env.*
+!.env.example
+
+# === ログ ===
+*.log
+logs/
+
+# === OS / エディタが作る一時ファイル ===
+.DS_Store
+Thumbs.db
+.vscode/
